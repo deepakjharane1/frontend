@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function Navbar() {
   return (
@@ -7,13 +8,13 @@ function Navbar() {
       style={{ backgroundColor: "white" }}
     >
       <div class="container p-1">
-        <a class="navbar-brand" href="#">
+        <Link class="navbar-brand" to={'/'}>
           <img
             src="media/image/logomain.svg"
             style={{ width: "25%" }}
             alt="logo"
           />
-        </a>
+        </Link>
         <button
           class="navbar-toggler"
           type="button"
@@ -29,34 +30,29 @@ function Navbar() {
           <form class="d-flex" role="search">
             <ul class="navbar-nav mb-lg-0">
               <li class="nav-item ">
-                <a  class="nav-link active fw-medium text-secondary" aria-current="page" href="#">
+                <Link  class="nav-link active fw-medium text-secondary" aria-current="page" to='/signup'>
                   Signup
-                </a>
+                </Link>
               </li>
               <li class="nav-item">
-                <a class="nav-link active fw-medium text-secondary" aria-current="page" href="#">
+                <Link class="nav-link active fw-medium text-secondary" aria-current="page" to="/about">
                   About
-                </a>
+                </Link>
               </li>
               <li class="nav-item">
-                <a class="nav-link active fw-medium text-secondary" aria-current="page" href="#">
+                <Link class="nav-link active fw-medium text-secondary" aria-current="page" to="/product">
                   Products
-                </a>
+                </Link>
               </li>
               <li class="nav-item">
-                <a class="nav-link active fw-medium text-secondary" aria-current="page" href="#">
+                <Link class="nav-link active fw-medium text-secondary" aria-current="page" to="/pricing">
                   Pricing
-                </a>
+                </Link>
               </li>
               <li class="nav-item">
-                <a class="nav-link active fw-medium text-secondary" aria-current="page" href="#">
+                <Link class="nav-link active fw-medium text-secondary" aria-current="page" to="/support">
                   Support
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active " aria-current="page" href="#">
-                <i class="fa fa-bars" aria-hidden="true"></i>
-                </a>
+                </Link>
               </li>
              </ul>
           </form>

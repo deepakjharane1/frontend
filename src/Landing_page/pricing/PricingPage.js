@@ -1,13 +1,13 @@
 import React from 'react'
+import Hero from './Hero'
 import Brokrage from './Brokrage';
-import Hero from './Hero';
 
 
 function PricingPage() {
     return ( 
         <>
-        <Brokrage/>
         <Hero/>
+        <Brokrage/>
         </>
      );
 }
